@@ -18,7 +18,12 @@ namespace Demo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
+            {
+                int a = int.Parse(textBox1.Text);
+                int b = int.Parse(textBox2.Text);
+                int c = a + b;
+            }
         }
     }
 }
