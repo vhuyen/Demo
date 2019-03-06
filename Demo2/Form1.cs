@@ -16,9 +16,15 @@ namespace Demo
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(textBox1.Text))
+            {
+                int a = int.Parse(textBox1.Text);
+                int b = int.Parse(textBox2.Text);
+                int c = a + b;
+            }
         }
     }
 }
